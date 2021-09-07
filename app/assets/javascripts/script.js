@@ -41,10 +41,10 @@ document.querySelector('#close').onclick = () =>{
 }
 
 var swiper = new Swiper(".home-slider", {
-  spaceBetween: 30,
+  spaceBetween: 500,
   centeredSlides: true,
   autoplay: {
-    delay: 7500,
+    delay: 6000,
     disableOnInteraction: false,
   },
   pagination: {
