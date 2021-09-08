@@ -16,7 +16,6 @@
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -113,6 +112,7 @@
 
     <!-- footer section ends -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <%= javascript_include_tag asset_path '/assets/script.js'%>
+    <%#= javascript_include_tag asset_url 'script.js'%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
