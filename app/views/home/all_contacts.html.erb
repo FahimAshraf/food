@@ -1,0 +1,37 @@
+<br><br><br><br>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Customer Name</th>
+			<th>Customer Number</th>
+			<th>Customer Order</th>
+			<th>Customer Food</th>
+			<th>Customer Food Quantity</th>
+			<th>Customer Date Time</th>
+			<th>Customer Adress</th>
+			<th>Customer Message</th>
+			<th>option</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%@obj.each do |contact|%>
+		<tr>
+
+			<td><%=contact.id%></td>
+			<td><%=contact.customer_name%></td>
+			<td><%=contact.customer_number%></td>
+			<td><%=contact.customer_order%></td>
+			<td><%=contact.customer_food%></td>
+			<td><%=contact.customer_food_quantity%></td>
+			<td><%=contact.customer_date_time%></td>
+			<td><%=contact.customer_adress%></td>
+			<td><%=contact.customer_message%></td>
+			<td><a href="/home/destroy"> delete</a></td>
+			<td><a href="<%=fahim_path(contact.id)%>">edit</a></td>
+
+
+		</tr>
+		<%end%>
+	</tbody>
+</table>

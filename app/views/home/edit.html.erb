@@ -1,0 +1,88 @@
+<br><br><br><br><br>
+
+
+<div class="container-bordered">
+    <form action="<%=menu_path(@contact.id)%>" method="get">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" name="customer_name"class="form-control" placeholder="enter your name" required="true" value="<%=@contact.customer_name%>">
+            </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" name="customer_number" placeholder="enter your number" required="true" value="<%=@contact.customer_number%>">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <input type="text" name="customer_order" placeholder="enter food name" required="true" value="<%=@contact.customer_order%>">
+            </div>
+            <div class="input">
+                <span>additional food</span>
+                <input type="test" name="customer_food" placeholder="extra with food" required="true" value="<%=@contact.customer_food%>">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>how musch</span>
+                <input type="number" name="customer_food_quantity" placeholder="how many orders" required="true" value="<%=@contact.customer_food_quantity%>">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local" name="customer_date_time" required="true" value="<%=@contact.customer_date_time%>">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea  name="customer_adress" placeholder="enter your address" id="" required="true" cols="30" rows="10"><%=@contact.customer_adress%></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea  name="customer_message" placeholder="enter your message" id="" required="true" cols="30" rows="10"><%=@contact.customer_message%></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn">
+
+    </form>
+</div>
+
+
+<style>
+
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text],input[type=number],input[type=test],input[type=datetime-local]   {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+</style>
