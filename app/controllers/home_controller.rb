@@ -12,11 +12,14 @@ class HomeController < ApplicationController
       customer_message:params[:customer_message])
     @contact.save
   end
-
+   
   def all_contacts
     @obj = ContactU.all.order("id")
   end
   def destroy
+   @contact = ContactU.find(params[:id])
+   @contact.destroy
+   redirect_to '/home/all_contacts'
   end
   def edit
     @contact = ContactU.find(params[:id])

@@ -22,28 +22,8 @@
   <body>
           
     <!-- header section starts      -->
+      <%= render :partial => 'layouts/header' %>
 
-    <header>
-
-        <a href="/" class="logo"><i class="fas fa-utensils"></i>resto.</a>
-
-        <nav class="navbar">
-            <a class="active" href="/#home">home</a>
-            <a href="/#dishes">dishes</a>
-            <a href="/#about">about</a>
-            <a href="/#menu">menu</a>
-            <a href="/#review">review</a>
-            <a href="/#order">order</a>
-        </nav>
-
-        <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-        </div>
-
-    </header>
 
     <!-- header section ends-->
 
@@ -65,51 +45,7 @@
       <%= yield %>
     <!-- footer section starts  -->
 
-    <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>locations</h3>
-                <a href="#">Lahore</a>
-                <a href="#">Islamabad</a>
-                <a href="#">Karachi</a>
-                <a href="#">Multan</a>
-                <a href="#">Faisalabad</a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">dishes</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
-                <a href="#">reivew</a>
-                <a href="#">order</a>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#">+92-306-9548505</a>
-                <a href="#">+92-343-0635142</a>
-                <a href="mailto:fahimashraf34@gmail.com">fahimashraf34@gmail.com</a>
-                <a href="mailto:fahimashraf43@gmail.com">fahimashraf43@gmail.com</a>
-                <a href="#">Lahore, Pakistan - 400104</a>
-            </div>
-
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
-            </div>
-
-        </div>
-
-        <div class="credit"> copyright @ 2021 by <span><a href="https://web.facebook.com/profile.php?id=100008314123798">Mr. Fahim Ashraf</a></span> </div>
-
-    </section>
+    <%= render :partial => 'layouts/footer' %>
 
     <!-- footer section ends -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

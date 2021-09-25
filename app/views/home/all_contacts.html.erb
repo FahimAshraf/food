@@ -27,8 +27,9 @@
 			<td><%=contact.customer_date_time%></td>
 			<td><%=contact.customer_adress%></td>
 			<td><%=contact.customer_message%></td>
-			<td><a href="/home/destroy"> delete</a></td>
+			<td><a href="<%=khatam_path(contact.id)%>"> delete</a></td>
 			<td><a href="<%=fahim_path(contact.id)%>">edit</a></td>
+			
 
 
 		</tr>
